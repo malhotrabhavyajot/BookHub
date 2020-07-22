@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    android:background="#ffffff"
+    app:cardCornerRadius="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llFavContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="11">
+
+        <ImageView
+            android:id="@+id/imgFavBookImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="#f5f5f5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_book_cover" />
+
+        <TextView
+            android:id="@+id/txtFavBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1.5"
+            android:padding="4dp"
+            android:text="Hello World"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="#f5f5f5" />
+
+        <TextView
+            android:id="@+id/txtFavBookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1.5"
+            android:padding="4dp"
+            android:text="Android Inc."
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="#f5f5f5" />
+
+        <TextView
+            android:id="@+id/txtFavBookRating"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="1.5"
+
+            android:drawablePadding="4dp"
+            android:padding="4dp"
+            android:text="Rs. 499"
+            android:textAlignment="center"
+            android:textColor="#357a38"
+
+            android:textSize="13sp"
+            android:textStyle="bold"
+             />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="#f5f5f5" />
+
+        <TextView
+            android:id="@+id/txtFavBookPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1.5"
+            android:padding="4dp"
+            android:text="4.5"
+            android:textAlignment="center"
+            android:textColor="#ffca28"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_about_rating"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="#f5f5f5" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

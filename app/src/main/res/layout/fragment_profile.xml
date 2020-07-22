@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".fragment.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/imgprof"
+        android:layout_width="272dp"
+        android:layout_height="339dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="250dp"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:padding="10dp"
+        android:src="@drawable/ic_prof" />
+
+    <TextView
+        android:id="@+id/txtprofileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Name:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@id/txtprofileName"
+        android:padding="20dp"
+        android:inputType="text"
+        android:text="                                " />
+
+    <TextView
+        android:id="@+id/profileAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtprofileName"
+        android:layout_marginTop="15dp"
+        android:text="Address:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="95dp"
+        android:layout_toRightOf="@id/profileAddress"
+        android:inputType="text"
+        android:padding="20dp"
+        android:text="                             " />
+
+    <TextView
+        android:id="@+id/txtnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Number:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/profileAddress"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="145dp"
+        android:layout_toRightOf="@id/txtnum"
+        android:padding="20dp"
+        android:inputType="text"
+        android:text="                            " />
+
+</RelativeLayout>
